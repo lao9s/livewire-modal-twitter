@@ -1,6 +1,9 @@
 ## About Livewire Modal Twitter
 
 Livewire component that provides a modal like on Twitter. Also, it supports images gallery with content or without.
+
+![Alt text](./screenshots/preview.png?raw=true "Preview - Livewire Modal Twitter")
+
 ## Installation
 
 To get started, require the package via Composer:
