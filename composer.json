@@ -1,0 +1,50 @@
+{
+  "name": "lao9s/livewire-modal-twitter",
+  "description": "Laravel Livewire Modal Twitter",
+  "keywords": [
+    "laravel",
+    "livewire",
+    "modal",
+    "twitter",
+    "alpine",
+    "tailwind"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dumitru Botezatu",
+      "email": "dima.botezatu@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Lao9s\\LivewireModalTwitter\\LivewireModalTwitterServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^7.4|^8.0",
+    "illuminate/support": "^8.0",
+    "livewire/livewire": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lao9s\\LivewireModalTwitter\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Lao9s\\LivewireModalTwitter\\Tests\\": "tests"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
