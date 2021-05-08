@@ -41,14 +41,20 @@ Livewire Modal Twitter requires [Alpine](https://github.com/alpinejs/alpine). Yo
 include Alpine:
 
 ```html
-
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 ```
 
 ## TailwindCSS
 
-This modal is made with TailwindCSS. If you use a different CSS framework I recommend that you publish the modal
-template and change the markup to include the required classes for your CSS framework.
+This modal is made with [TailwindCSS](https://tailwindcss.com/). You can use the official CDN to quickly
+include TailwindCSS:
+
+```html
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+```
+
+If you use a different CSS framework I recommend that you publish the modal
+templates and change the markup to include the required classes for your CSS framework.
 
 ```shell
 php artisan vendor:publish --tag=livewire-modal-twitter:views
