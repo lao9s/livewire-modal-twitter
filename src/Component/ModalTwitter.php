@@ -2,7 +2,6 @@
 
 namespace Lao9s\LivewireModalTwitter\Component;
 
-use Illuminate\View\View;
 use Livewire\Component;
 
 class ModalTwitter extends Component
@@ -22,7 +21,6 @@ class ModalTwitter extends Component
             'name' => $component,
             'attributes' => $componentAttributes,
             'modalAttributes' => array_merge([
-                'closeOnEscape' => $componentClass::closeModalOnEscape(),
                 'hasLoading' => $componentClass::hasLoading(),
             ], $modalAttributes),
         ];
@@ -37,7 +35,7 @@ class ModalTwitter extends Component
         ];
     }
 
-    public function render(): View
+    public function render()
     {
         return view('livewire-modal-twitter::modal');
     }
